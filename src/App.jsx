@@ -6,7 +6,7 @@ import {login, logout, selectUser} from "./features/userSlice";
 import Login from "./Login";
 import {auth} from "./firebase";
 import Receipt from "./Receipt";
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Gate from './Gate';
 
@@ -37,20 +37,14 @@ function App() {
         user ? (<Navbar/>):(<Login/>)
       }
 
-    <Switch>
-      <Route path="/home">
-        <Main />
-      </Route>
+    <Routes>
 
-      <Route path="/receipt">
-        <Receipt />
-      </Route>
+      <Route path="/home" element={<Main />} />
+      <Route path="/receipt" element={<Receipt />} />
+      <Route path="/gate" element={<Gate />} />
 
-      <Route path="/gate">
-        <Gate/>
-      </Route>
+    </Routes>
 
-    </Switch>
     </div>
   );
 }
