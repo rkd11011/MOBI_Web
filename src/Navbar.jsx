@@ -1,4 +1,4 @@
-import { Home, Search } from "@material-ui/icons";
+import { Home } from "@material-ui/icons";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
@@ -79,8 +79,6 @@ function Navbar() {
       </div>
 
       <div className="qHeader_input">
-        <input type="text" placeholder="검색하기" />
-        <Search />
       </div>
 
       <div className="qHeader_Rem">

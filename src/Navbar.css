@@ -9,6 +9,8 @@
     top: 0;
     z-index: 999;
     box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+
 }
 
 .qHeader_logo>img {
@@ -45,21 +47,9 @@
     align-items: center;
     width: 400px;
     height: 100%;
-    border: 1px solid skyblue;
+    border: 0px solid skyblue;
     padding: 5px;
     border-radius: 5px;
-}
-
-.qHeader_input>input {
-    background-color: transparent;
-    outline: none;
-    width: 400px;
-    border: none;
-    color: rgb(49, 49, 49);
-}
-
-.qHeader_input>.MuiSvgIcon-root {
-    color: skyblue;
 }
 
 .qHeader_Rem {

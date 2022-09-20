@@ -1,0 +1,47 @@
+.GateuseBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid skyblue;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: inherit;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.GateuseBox:hover {
+    border: 2px solid royalblue;
+}
+
+/* 박스에 마우스 올려졋을때 효과 */
+
+
+.GateuseBox_Info {
+    display: flex;
+    align-items: center;
+}
+
+/*윗부분 info 에 나열 방식 */
+
+.GateuseBox_Info>h5 {
+    color: skyblue;
+    margin-left: 10px;
+
+}
+
+/* 아바타옆에 글쓴이에 대한 정보 */
+
+.GateuseBox_Rimuru {
+    display: flex;
+    width: 1000px;
+    margin-top: 8px;
+}
+
+/*밑에 부분 보여지는거 설정*/
+.GateuseBox_Rimuru>p {
+    color: royalblue;
+    font-weight: bold;
+    font-size: large;
+}

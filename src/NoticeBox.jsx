@@ -11,7 +11,7 @@ function NoticeBox() {
       </div>
 
       <div className="NoticeBox_Rimuru">
-        <p>공지사항을 작성해주세요</p>
+        <p>공지사항을 작성할 수 있습니다</p>
       </div>
     </div>
   );

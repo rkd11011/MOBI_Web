@@ -1,8 +1,10 @@
 import { useMemo, React } from "react";
-import "./styles.css";
+import "./Gateuse.css";
 import Table from "./Table";
+import GateuseBox from "./GateuseBox";
 
 function Gateuse() {
+  
   const columns = useMemo(
     () => [
       {
@@ -27,18 +29,24 @@ function Gateuse() {
 
   const data = useMemo(
     () =>
-      Array(20)
+      Array(10)
         .fill()
         .map(() => ({
           name: "A",
-          number: "B",
-          time: "C",
-          success: "D",
+          number: "1",
+          time: "10",
+          success: "OK",
         })),
     []
   );
-
-  return <Table columns={columns} data={data} />;
+  
+  return(
+    <div>
+    <GateuseBox />
+   <Table columns={columns} data={data} />
+   
+   </div>
+  )
 }
 
 export default Gateuse;

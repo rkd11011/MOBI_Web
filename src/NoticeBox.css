@@ -6,6 +6,7 @@
     background-color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .NoticeBox:hover {
@@ -38,7 +39,7 @@
 
 /*밑에 부분 보여지는거 설정*/
 .NoticeBox_Rimuru>p {
-    color: black;
+    color: royalblue;
     font-weight: bold;
     font-size: large;
 }

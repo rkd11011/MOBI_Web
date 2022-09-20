@@ -16,7 +16,7 @@ function Table({ columns, data }) {
   return (
     <>
       <Search onSubmit={setGlobalFilter} />
-      <div className="Ad">
+      <div className="Table_round">
 
       <table {...getTableProps()}>
         <thead>
