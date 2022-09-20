@@ -1,5 +1,5 @@
-import { Home, Search, Link } from '@material-ui/icons'
-import BorderAllIcon from '@mui/icons-material/BorderAll';
+import { Home, Search } from '@material-ui/icons'
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
@@ -14,6 +14,7 @@ import db, { auth } from './firebase';
 import Modal from 'react-modal';
 import { Input } from '@mui/material';
 import firebase from 'firebase/compat/app';
+import { Link } from "react-router-dom";
 
 function Navbar() {
 
@@ -48,23 +49,33 @@ function Navbar() {
         <div className="qHeader_icons">
 
             <div className="qHeader_icon">
+            <Link to="/home">
+            <Button style={{color:'skyblue'}}>
                 <Home/>
-            </div>            
-            
+            </Button> 
+            </Link>
+            </div>   
+
             <div className="qHeader_icon">
-                <BorderAllIcon/>
+            <Link to="/receipt">
+            <Button style={{color:'skyblue'}}>
+                <PermContactCalendarIcon/>
+            </Button> 
+            </Link>
             </div>    
 
             <div className="qHeader_icon">
-                <PermContactCalendarIcon/>
-            </div>            
-            
-            <div className="qHeader_icon">
+            <Link to="/gate">
+            <Button style={{color:'skyblue'}}>
                 <PeopleAltIcon/>
-            </div>            
+            </Button> 
+            </Link>
+            </div>                 
             
             <div className="qHeader_icon">
+            <Button style={{color:'skyblue'}}>
                 <NotificationsActiveIcon/>
+            </Button> 
             </div>
 
         </div>
@@ -110,7 +121,7 @@ function Navbar() {
                     <Input type="text" placeholder="공지사항을 작성하세요" required value={input} onChange={(e) => setInput(e.target.value)}/>
 
                     <div className='modal_fieldLink'>
-                        <Link/>
+                        <AttachFileIcon/>
                         <Input type="text" placeholder="이미지 url을 작성하세요" value={inputUrl} onChange={(e) => setInputUrl(e.target.value)}/>
                     </div>
                 </div>
