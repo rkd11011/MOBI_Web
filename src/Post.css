@@ -19,19 +19,19 @@
     align-items: center;
 }
 
-.post_Info > h5 {
+.post_Info>h5 {
     color: skyblue;
     margin-left: 10px;
     cursor: pointer;
     font-size: 13px;
 }
 
-.post_Info > h5:hover {
+.post_Info>h5:hover {
     text-decoration: underline;
 }
 
 
-.post_Info > small {
+.post_Info>small {
     margin-left: 10px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 
-.post_body > img {
+.post_body>img {
     object-fit: contain;
     width: 1000px;
     border-radius: 5px;
@@ -54,13 +54,14 @@
 .post_footerRight {
     margin-left: auto;
 }
-.post_footerRight > .MuiSvgIcon-root {
+
+.post_footerRight>.MuiSvgIcon-root {
     cursor: pointer;
     margin-left: 10px;
-    color:black;
+    color: black;
 }
 
-.post_footerRight > .MuiSvgIcon-root:hover {
+.post_footerRight>.MuiSvgIcon-root:hover {
     cursor: pointer;
-    color:skyblue;
+    color: skyblue;
 }

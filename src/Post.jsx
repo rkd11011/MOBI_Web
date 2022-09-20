@@ -1,11 +1,10 @@
-import React from 'react'
-import './Post.css'
-import { Avatar } from '@mui/material'
-import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
-import db from './firebase';
+import React from "react";
+import "./Post.css";
+import { Avatar } from "@mui/material";
+import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
+import db from "./firebase";
 
-function Post({image, notice, timestamp, quoraUser, Id }) {
-  
+function Post({ image, notice, timestamp, quoraUser, Id }) {
   const onDeleteClick = async () => {
     const ok = window.confirm("삭제 원츄?");
     console.log(ok);
@@ -14,8 +13,6 @@ function Post({image, notice, timestamp, quoraUser, Id }) {
       console.log(Id);
     }
   };
-  
-
 
   return (
     <div className="post">
@@ -34,11 +31,11 @@ function Post({image, notice, timestamp, quoraUser, Id }) {
 
       <div className="post_footerRight">
         <span onClick={onDeleteClick}>
-          <DeleteOutlineOutlinedIcon/>
+          <DeleteOutlineOutlinedIcon />
         </span>
       </div>
     </div>
   );
 }
 
-export default Post
+export default Post;

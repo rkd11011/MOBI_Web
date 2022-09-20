@@ -1,0 +1,9 @@
+.search_icon {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    border: 1px solid skyblue;
+    padding: 5px;
+    border-radius: 5px;
+}

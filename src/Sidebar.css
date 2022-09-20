@@ -2,36 +2,3 @@
     margin-right: 10px;
     flex: 0.6;
 }
-
-.sidebarOptions {
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebarOption {
-    display: flex;
-    align-items: center;
-    padding:10px;
-    cursor:pointer;
-}
-
-.sidebarOption:hover {
-    background-color: lightgray;
-    border-radius: 5px;
-}
-.sidebarOption > img {
-    height: 97px;
-    margin-left: 5px;
-    border-radius: 5px;
-}
-.sidebarOption > p {
-    color: black;
-    font-weight: 400;
-    margin-left: 10px;
-}
-
-.sidebarOption > .MuiSvgIcon-root {
-    color:skyblue;
-    font-size:medium;
-    margin-left: 10px;
-}

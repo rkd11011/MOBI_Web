@@ -1,0 +1,11 @@
+.Ad {
+    margin-right: 400px;
+    margin-left: 400px;
+    padding: 10px;
+    display: flex;
+    flex: 0.6;
+    flex-direction: column;
+    color: skyblue;
+    border: 2px solid skyblue;
+
+}
