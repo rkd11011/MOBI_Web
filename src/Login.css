@@ -6,6 +6,10 @@
     background: url("https://www.ilovepdf.com/storage/blog/153-1659686644-How-to-add-initials-to-a-PDF-form-or-contract.png");
     background-size: cover;
     background-position: center;
+    size:cover;
+    position: sticky /*필수*/;
+    top: 0 /*필수*/;
+    z-index: 1;
 }
 
 .login_container {
@@ -43,6 +47,7 @@
     align-items: center;
     display: flex;
 }
+
 
 .login_emailPass {
     display: flex;
@@ -110,3 +115,13 @@
 .login_footer>p:hover {
     text-decoration: underline;
 }
+
+
+.login{
+    -ms-overflow-style: none;
+    }
+    
+   ::-webkit-scrollbar {
+     display: none;
+   }
+

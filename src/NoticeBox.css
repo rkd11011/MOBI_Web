@@ -7,6 +7,8 @@
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
+    position: inherit;
+    width: 1000px;
 }
 
 .NoticeBox:hover {
@@ -31,14 +33,14 @@
 
 /* 아바타옆에 글쓴이에 대한 정보 */
 
-.NoticeBox_Rimuru {
+.NoticeBox_Main {
     display: flex;
     width: 1000px;
     margin-top: 8px;
 }
 
 /*밑에 부분 보여지는거 설정*/
-.NoticeBox_Rimuru>p {
+.NoticeBox_Main>p {
     color: royalblue;
     font-weight: bold;
     font-size: large;

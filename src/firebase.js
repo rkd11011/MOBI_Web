@@ -3,13 +3,14 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBgmLdZfXvn5WYTNX1CjfUW2IPLNFExpPI",
-  authDomain: "granadilla-dd513.firebaseapp.com",
-  projectId: "granadilla-dd513",
-  storageBucket: "granadilla-dd513.appspot.com",
-  messagingSenderId: "120306619436",
-  appId: "1:120306619436:web:5687f70c94d9f1155bed89",
-  measurementId: "G-588723B11S",
+  apiKey: "AIzaSyDh2xcKaAc8D1E8sJmYWID8oogw3XBfLpQ",
+  authDomain: "mobi-2852c.firebaseapp.com",
+  databaseURL: "https://mobi-2852c-default-rtdb.firebaseio.com",
+  projectId: "mobi-2852c",
+  storageBucket: "mobi-2852c.appspot.com",
+  messagingSenderId: "432479934767",
+  appId: "1:432479934767:web:f16b33a4e99f14d467a9da",
+  measurementId: "G-P2PJMFW39P"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

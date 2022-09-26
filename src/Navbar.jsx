@@ -1,14 +1,14 @@
 import { Home } from "@material-ui/icons";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
-import PermContactCalendarIcon from "@mui/icons-material/PermContactCalendar";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import DoorSlidingIcon from "@mui/icons-material/DoorSliding";
+import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import LogoutIcon from "@mui/icons-material/Logout";
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Avatar, Button } from "@material-ui/core";
 import { useSelector } from "react-redux";
-import { selectUser } from "./features/userSlice";
+import { selectUser } from "./features/UserSlice";
 import db, { auth } from "./firebase";
 import Modal from "react-modal";
 import { Input } from "@mui/material";
@@ -46,7 +46,7 @@ function Navbar() {
 
       <div className="qHeader_icons">
         <div className="qHeader_icon">
-          <Link to="/home">
+          <Link to="/">
             <Button style={{ color: "skyblue" }}>
               <Home />
             </Button>
@@ -72,7 +72,7 @@ function Navbar() {
         <div className="qHeader_icon">
           <Link to="/receipt">
             <Button style={{ color: "skyblue" }}>
-              <PermContactCalendarIcon />
+              <NotificationsActiveIcon />
             </Button>
           </Link>
         </div>
@@ -85,7 +85,7 @@ function Navbar() {
         <div className="qHeader_avatar">
           <LogoutIcon onClick={() => auth.signOut()} />
         </div>
-        <Button onClick={() => setOpenModal(true)}> 글 쓰기</Button>
+        <Button onClick={() => setOpenModal(true)}>글 쓰기</Button>
 
         <Modal
           isOpen={openModal}

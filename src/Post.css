@@ -6,7 +6,11 @@
     background-color: white;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    position: inherit;
+    width: 1000px;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 }
 
 .post:hover {

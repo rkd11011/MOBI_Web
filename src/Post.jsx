@@ -6,7 +6,7 @@ import db from "./firebase";
 
 function Post({ image, notice, timestamp, quoraUser, Id }) {
   const onDeleteClick = async () => {
-    const ok = window.confirm("삭제 원츄?");
+    const ok = window.confirm("해당 공지사항을 삭제하시겠습니까?");
     console.log(ok);
     if (ok) {
       await db.doc(`notices/${Id}`).delete();

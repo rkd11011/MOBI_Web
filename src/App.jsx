@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import "./App.css";
 import Main from "./Main";
 import { useDispatch, useSelector } from "react-redux";
-import { login, logout, selectUser } from "./features/userSlice";
+import { login, logout, selectUser } from "./features/UserSlice";
 import Login from "./Login";
 import { auth } from "./firebase";
 import Receipt from "./Receipt";
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
-import Gateuse from "./Gateuse";
-import Gateauth from "./Gateauth";
+import GateUse from "./GateUse";
+import GateAuth from "./GateAuth";
 
 function App() {
   const user = useSelector(selectUser);
@@ -34,13 +34,13 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <Navbar /> : <Login />}
+      {user ? <Navbar />: <Login />}
 
       <Routes>
-        <Route path="/home" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/receipt" element={<Receipt />} />
-        <Route path="/gateuse" element={<Gateuse />} />
-        <Route path="/gateauth" element={<Gateauth />} />
+        <Route path="/gateuse" element={<GateUse />} />
+        <Route path="/gateauth" element={<GateAuth />} />
       </Routes>
     </div>
   );
