@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import Main from "./Main";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/UserSlice";

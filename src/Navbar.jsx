@@ -106,7 +106,7 @@ function Navbar() {
         >
           <div className="modal_info">
             <Avatar src={user.photo} />
-            <p>{user.displayName ? user.displayName : user.email}</p>
+            <p>{user.displayName ? user.displayName : "관리자"}</p>
           </div>
 
           <div className="modal_Field">
