@@ -2,18 +2,18 @@ import { Home } from "@material-ui/icons";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import DoorSlidingIcon from "@mui/icons-material/DoorSliding";
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import LogoutIcon from "@mui/icons-material/Logout";
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Avatar, Button } from "@material-ui/core";
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/UserSlice";
-import db, { auth } from "./firebase";
+import { auth } from "./firebase"; //로그아웃에 사용
 import Modal from "react-modal";
 import { Input } from "@mui/material";
-import firebase from "firebase/compat/app";
 import { Link } from "react-router-dom";
+import { getDatabase, ref, child, push, update } from "firebase/database"; //리얼타임사용
 
 function Navbar() {
   const user = useSelector(selectUser);
@@ -24,12 +24,21 @@ function Navbar() {
   const handlenotice = (e) => {
     e.preventDefault();
     setOpenModal(false);
-    db.collection("notices").add({
-      notice: input,
+    const db2 = getDatabase(); //객체생성
+
+    const postData = {
+      //데이터 구조생성
+      contents: input,
       imageUrl: inputUrl,
-      timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-      user: user,
-    });
+      createdAt: { ".sv": "timestamp" }, //타임 스탬프 사용
+      noticeId: user.uid, //유저식별자
+      title: "제목",
+    };
+
+    const newPostKey = push(child(ref(db2), "Articles")).key; //포스트 할때 사용할 키값 생성
+    const updates = {}; //업데이트 객체 초기화
+    updates["/Articles/" + newPostKey] = postData; //키값으로 상위 구조만들고 데이터를 이후에 집어넣음
+    update(ref(db2), updates); //post개시
 
     setInput("");
     setInputUrl("");
@@ -78,8 +87,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="qHeader_input">
-      </div>
+      <div className="qHeader_input"></div>
 
       <div className="qHeader_Rem">
         <div className="qHeader_avatar">
@@ -103,7 +111,7 @@ function Navbar() {
               marginLeft: "-350px",
             },
           }}
-        >
+        > 
           <div className="modal_info">
             <Avatar src={user.photo} />
             <p>{user.displayName ? user.displayName : "관리자"}</p>

@@ -1,0 +1,54 @@
+.modal_info {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+.modal_buttonsA {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  .modal_buttonsA > .can {
+    margin-left: auto;
+    border: none;
+    margin-top: 5px;
+    outline: none;
+    color: skyblue;
+    font-weight: 500;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+  
+  .modal_buttonsA > .add {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    background-color: skyblue;
+    color: white;
+    font-weight: 700;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+  }
+
+  .modal_FieldA {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    flex: 1;
+    width: 100%;
+  }
+
+  .modal_FieldB {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    flex: 1;
+    width: 100%;
+  }
+  

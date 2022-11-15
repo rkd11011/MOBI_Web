@@ -1,9 +1,9 @@
 import SearchIcon from "@mui/icons-material/Search";
-import { Button } from "@mui/material";
+import { Button } from "@material-ui/core";
 import React from "react";
-import "./ReceiptSearch.css";
+import "./GateAuthSearch.css";
 
-function Search({ onSubmit }) {
+function GateAuthSearch({ onSubmit }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmit(event.target.elements.filter.value);
@@ -11,7 +11,7 @@ function Search({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="receipt_search_box">
+      <div className="GateAuthSearch_box">
         <input name="filter" placeholder="검색하기" />
         <Button style={{ color: "skyblue" }}>
           <SearchIcon />
@@ -21,4 +21,4 @@ function Search({ onSubmit }) {
   );
 }
 
-export default Search;
+export default GateAuthSearch;

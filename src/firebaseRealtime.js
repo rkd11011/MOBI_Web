@@ -1,6 +1,5 @@
-import firebase from "firebase/compat/app";
-import "firebase/compat/auth";
-import "firebase/compat/firestore";
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDh2xcKaAc8D1E8sJmYWID8oogw3XBfLpQ",
@@ -13,14 +12,10 @@ const firebaseConfig = {
   measurementId: "G-P2PJMFW39P",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-const auth = firebase.auth();
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
 
-const provider = new firebase.auth.GoogleAuthProvider();
-
-const db = firebaseApp.firestore();
-
-export { auth, provider };
-
-export default db;
+export default database;

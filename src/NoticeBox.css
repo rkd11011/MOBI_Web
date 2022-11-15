@@ -1,47 +1,45 @@
 .NoticeBox {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 2px solid skyblue;
-    background-color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    position: inherit;
-    width: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid skyblue;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: inherit;
+  width: 1000px;
 }
 
 .NoticeBox:hover {
-    border: 2px solid royalblue;
+  border: 2px solid royalblue;
 }
 
 /* 박스에 마우스 올려졋을때 효과 */
 
-
 .NoticeBox_Info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 /*윗부분 info 에 나열 방식 */
 
-.NoticeBox_Info>h5 {
-    color: skyblue;
-    margin-left: 10px;
-
+.NoticeBox_Info > h5 {
+  color: skyblue;
+  margin-left: 10px;
 }
 
 /* 아바타옆에 글쓴이에 대한 정보 */
 
 .NoticeBox_Main {
-    display: flex;
-    width: 1000px;
-    margin-top: 8px;
+  display: flex;
+  width: 1000px;
+  margin-top: 8px;
 }
 
 /*밑에 부분 보여지는거 설정*/
-.NoticeBox_Main>p {
-    color: royalblue;
-    font-weight: bold;
-    font-size: large;
+.NoticeBox_Main > p {
+  color: royalblue;
+  font-weight: bold;
+  font-size: large;
 }

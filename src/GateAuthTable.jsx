@@ -1,9 +1,9 @@
 import React from "react";
 import { useTable, useGlobalFilter, useSortBy } from "react-table";
-import ReceiptSearch from "./ReceiptSearch";
-import "./ReceiptTable.css";
+import GateAuthSearch from "./GateAuthSearch";
+import "./GateAuthTable.css";
 
-function ReceiptTable({ columns, data }) {
+function GateAuthTable({ columns, data }) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -15,8 +15,8 @@ function ReceiptTable({ columns, data }) {
 
   return (
     <>
-      <ReceiptSearch onSubmit={setGlobalFilter} />
-      <div className="ReceiptTable_round">
+      <GateAuthSearch onSubmit={setGlobalFilter} />
+      <div className="GateAuthTable_round">
         <table {...getTableProps()}>
           <thead>
             {headerGroups.map((headerGroup) => (
@@ -47,4 +47,4 @@ function ReceiptTable({ columns, data }) {
   );
 }
 
-export default ReceiptTable;
+export default GateAuthTable;

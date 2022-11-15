@@ -1,71 +1,66 @@
 .post {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border: 2px solid skyblue;
-    background-color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    position: inherit;
-    width: 1000px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 2px solid skyblue;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: inherit;
+  width: 1000px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
 .post:hover {
-    border: 2px solid royalblue;
+  border: 2px solid royalblue;
 }
-
 
 .post_Info {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.post_Info>h5 {
-    color: skyblue;
-    margin-left: 10px;
-    cursor: pointer;
-    font-size: 13px;
+.post_Info > h5 {
+  color: skyblue;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
-.post_Info>h5:hover {
-    text-decoration: underline;
+.post_Info > h5:hover {
+  text-decoration: underline;
 }
 
-
-.post_Info>small {
-    margin-left: 10px;
+.post_Info > small {
+  margin-left: 10px;
 }
-
-
 
 .post_body {
-    flex-direction: column;
-    margin-top: 5px;
+  flex-direction: column;
+  margin-top: 5px;
 }
 
-
-.post_body>img {
-    object-fit: contain;
-    width: 1000px;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px;
+.post_body > img {
+  object-fit: contain;
+  width: 1000px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .post_footerRight {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-.post_footerRight>.MuiSvgIcon-root {
-    cursor: pointer;
-    margin-left: 10px;
-    color: black;
+.post_footerRight > .MuiSvgIcon-root {
+  cursor: pointer;
+  margin-left: 10px;
+  color: black;
 }
 
-.post_footerRight>.MuiSvgIcon-root:hover {
-    cursor: pointer;
-    color: skyblue;
+.post_footerRight > .MuiSvgIcon-root:hover {
+  cursor: pointer;
+  color: skyblue;
 }

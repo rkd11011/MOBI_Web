@@ -1,4 +1,4 @@
-.gateuse_search_box {
+.GateAuthSearch_box {
   margin-top: 20px;
   margin-bottom: 10px;
   display: flex;
@@ -12,7 +12,7 @@
   margin-right: auto;
 }
 
-.gateuse_search_box > input {
+.GateAuthSearch_box > input {
   background-color: transparent;
   outline: none;
   width: 1000px;
@@ -21,6 +21,6 @@
   margin-left: 5px;
 }
 
-.gateuse_search_box > .MuiSvgIcon-root {
+.GateAuthSearch_box > .MuiSvgIcon-root {
   color: skyblue;
 }

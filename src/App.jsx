@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <Navbar />: <Login />}
+      {user ? <Navbar /> : <Login />}
 
       <Routes>
         <Route path="/" element={<Main />} />

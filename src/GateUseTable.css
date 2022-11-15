@@ -1,13 +1,12 @@
 .GateUseTable_round {
-    margin-top: 20px;
-    margin-right: 400px;
-    margin-left: 400px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    color: gray;
-    border: 2px solid skyblue;
-    width: 1000px;
-    margin: 0 auto;
-
+  margin-top: 20px;
+  margin-right: 400px;
+  margin-left: 400px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  border: 2px solid skyblue;
+  width: 1000px;
+  margin: 0 auto;
 }
