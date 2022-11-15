@@ -32,7 +32,7 @@ function Receipt() {
       const data2 = snapshot.val(); //값을 데이터에 저장함
       KeysLength = Object.keys(data2).length;
 
-      for (var i = 0; i < KeysLength; i++) {
+      for (var i = KeysLength - 1; i >= 0; i--) {
         // eslint-disable-next-line no-loop-func
         onValue(
           ref(db, "users/" + data2[Object.keys(data2)[i]]["signId"] + "/name"),
