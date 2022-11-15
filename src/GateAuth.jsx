@@ -36,7 +36,7 @@ function GateAuth() {
       console.log(data2);
       gateID_Length = Object.keys(data2).length; //게이트 번호 길이
       console.log(gateID_Length);
-      for (var i = 0; i < gateID_Length; i++) {
+      for (var i = KeysLength - 1; i >= 0; i--) {
         gateID_key = Object.keys(data2)[i]; //게이트 번호 키값
         console.log(gateID_key);
         userID_Length = Object.keys(data2[gateID_key]).length; //사용자 ID 길이
